@@ -1,0 +1,21 @@
+﻿# Frontend dependencies and builds
+frontend/node_modules/
+frontend/dist/
+
+# Backend database and Python cache
+backend/*.db
+backend/*.sqlite
+backend/*.sqlite3
+backend/__pycache__/
+backend/venv/
+backend/.venv/
+
+# Secrets
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/.env
+
+frontend/node_modules/
+
