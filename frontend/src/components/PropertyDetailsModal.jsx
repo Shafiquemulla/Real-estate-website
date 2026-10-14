@@ -67,7 +67,7 @@ export default function PropertyDetailsModal({
         </button>
 
         {/* Property Image Banner */}
-        <div style={{ position: 'relative', width: '100%', height: '340px', overflow: 'hidden' }}>
+        <div className="modal-image-banner" style={{ position: 'relative', width: '100%', height: '340px', overflow: 'hidden' }}>
           <img
             src={property.image_url}
             alt={property.title}
@@ -91,7 +91,7 @@ export default function PropertyDetailsModal({
         </div>
 
         {/* Property Body Content */}
-        <div style={{ padding: '32px' }}>
+        <div className="modal-body-padded" style={{ padding: '32px' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '16px', marginBottom: '20px' }}>
             <div>
               <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '28px', fontWeight: 800, color: 'var(--navy-900)', marginBottom: '6px' }}>
@@ -113,7 +113,7 @@ export default function PropertyDetailsModal({
           </div>
 
           {/* Key specs strip */}
-          <div style={{
+          <div className="modal-specs-strip" style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(4, 1fr)',
             gap: '12px',
@@ -191,7 +191,7 @@ export default function PropertyDetailsModal({
           )}
 
           {/* Agent Contact & Quick Inquiry Box */}
-          <div style={{
+          <div className="modal-agent-grid" style={{
             background: 'var(--navy-900)',
             color: '#ffffff',
             borderRadius: 'var(--radius-lg)',

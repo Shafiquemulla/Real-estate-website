@@ -39,7 +39,7 @@ export default function UserModal({ onClose, onShowToast }) {
           <X size={20} />
         </button>
 
-        <div style={{ padding: '32px' }}>
+        <div className="modal-body-padded" style={{ padding: '32px' }}>
           {loggedInUser ? (
             <div style={{ textAlign: 'center', padding: '16px 0' }}>
               <div style={{

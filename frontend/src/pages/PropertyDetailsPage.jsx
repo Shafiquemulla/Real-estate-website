@@ -176,7 +176,7 @@ export default function PropertyDetailsPage({
               </button>
             </li>
             <li className="breadcrumb-separator"><ChevronRight size={14} /></li>
-            <li className="breadcrumb-item active" style={{ maxWidth: '320px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+            <li className="breadcrumb-item active" style={{ maxWidth: 'min(100%, 200px)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               {property.title}
             </li>
           </ol>
@@ -597,7 +597,7 @@ export default function PropertyDetailsPage({
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 />
 
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
+                <div className="agent-form-inputs-row" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
                   <input
                     type="email"
                     placeholder="Email Address *"
@@ -654,7 +654,7 @@ export default function PropertyDetailsPage({
         {/* 5. Similar Mumbai Properties Section */}
         {similarProperties.length > 0 && (
           <div className="similar-properties-section">
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '24px' }}>
+            <div className="similar-properties-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '24px' }}>
               <div>
                 <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '26px', fontWeight: 800, color: 'var(--navy-900)' }}>
                   Similar Mumbai Properties

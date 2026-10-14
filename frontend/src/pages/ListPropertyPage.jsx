@@ -361,7 +361,7 @@ export default function ListPropertyPage({ onNavigate, onShowToast, onPropertyAd
               <span className="badge-tag" style={{ background: 'rgba(245, 158, 11, 0.15)', color: 'var(--yellow-400)', border: '1px solid rgba(245, 158, 11, 0.3)', padding: '5px 14px', borderRadius: 'var(--radius-full)', fontSize: '13px', fontWeight: 700, display: 'inline-block', marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.8px' }}>
                 Direct Indian Owner & Agent Portal
               </span>
-              <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '38px', fontWeight: 800, color: '#ffffff', lineHeight: 1.2, marginBottom: '12px' }}>
+              <h1 className="page-hero-title" style={{ fontFamily: 'var(--font-display)', fontSize: '38px', fontWeight: 800, color: '#ffffff', lineHeight: 1.2, marginBottom: '12px' }}>
                 List Your Property in India
               </h1>
               <p style={{ color: '#cbd5e1', fontSize: '17px', lineHeight: 1.6, maxWidth: '640px', marginBottom: '24px' }}>

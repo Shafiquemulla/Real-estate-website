@@ -14,6 +14,7 @@ import PropertyDetailsPage from './pages/PropertyDetailsPage';
 import PostPropertyModal from './components/PostPropertyModal';
 import FavoritesModal from './components/FavoritesModal';
 import UserModal from './components/UserModal';
+import BottomNav from './components/BottomNav';
 
 // High-fidelity fallback Mumbai properties in Indian Rupees (INR)
 const INITIAL_PROPERTIES = [
@@ -539,6 +540,9 @@ export default function App() {
 
       {/* Dark Navy Footer */}
       <Footer onNavigate={(page) => navigateTo(page)} />
+
+      {/* Fixed Mobile Bottom Navigation Bar (Mobile only) */}
+      <BottomNav activePage={activePage} setActivePage={navigateTo} />
 
       {/* Post Property Modal Form */}
       {isPostPropertyOpen && (

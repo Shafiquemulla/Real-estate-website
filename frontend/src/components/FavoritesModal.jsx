@@ -18,7 +18,7 @@ export default function FavoritesModal({
           <X size={20} />
         </button>
 
-        <div style={{ padding: '28px 28px 20px', borderBottom: '1px solid var(--border-light)' }}>
+        <div className="modal-header-padded" style={{ padding: '24px 24px 18px', borderBottom: '1px solid var(--border-light)' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#ef4444', marginBottom: '6px' }}>
             <Heart size={22} fill="#ef4444" />
             <span style={{ fontSize: '13px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px' }}>
@@ -30,7 +30,7 @@ export default function FavoritesModal({
           </h2>
         </div>
 
-        <div style={{ padding: '24px 28px', maxHeight: '60vh', overflowY: 'auto' }}>
+        <div className="modal-body-scrollable" style={{ padding: '20px 24px', maxHeight: '60vh', overflowY: 'auto' }}>
           {favoriteProperties.length === 0 ? (
             <div style={{ textAlign: 'center', padding: '40px 20px' }}>
               <Heart size={48} color="#cbd5e1" style={{ margin: '0 auto 16px' }} />
@@ -51,6 +51,7 @@ export default function FavoritesModal({
                 return (
                   <div
                     key={prop.id}
+                    className="favorite-item-row"
                     style={{
                       display: 'flex',
                       gap: '16px',

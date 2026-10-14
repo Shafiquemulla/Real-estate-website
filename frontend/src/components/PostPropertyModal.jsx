@@ -76,7 +76,7 @@ export default function PostPropertyModal({
           <X size={20} />
         </button>
 
-        <div style={{ padding: '32px 32px 20px', borderBottom: '1px solid var(--border-light)' }}>
+        <div className="modal-header-padded" style={{ padding: '32px 32px 20px', borderBottom: '1px solid var(--border-light)' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'var(--yellow-600)', marginBottom: '6px' }}>
             <Building size={24} />
             <span style={{ fontSize: '13px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px' }}>
@@ -91,7 +91,7 @@ export default function PostPropertyModal({
           </p>
         </div>
 
-        <form onSubmit={handleSubmit} style={{ padding: '28px 32px 32px' }}>
+        <form className="modal-form-padded" onSubmit={handleSubmit} style={{ padding: '28px 32px 32px' }}>
           {error && (
             <div style={{
               background: '#fee2e2',

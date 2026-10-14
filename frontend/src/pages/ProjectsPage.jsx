@@ -177,7 +177,7 @@ export default function ProjectsPage({ onNavigateHome, onShowToast }) {
               <Sparkles size={13} />
               Mumbai Landmark Developments
             </span>
-            <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '38px', fontWeight: 800, color: '#ffffff', lineHeight: 1.2, marginBottom: '12px' }}>
+            <h1 className="page-hero-title" style={{ fontFamily: 'var(--font-display)', fontSize: '38px', fontWeight: 800, color: '#ffffff', lineHeight: 1.2, marginBottom: '12px' }}>
               Exclusive New Development Projects
             </h1>
             <p style={{ color: '#cbd5e1', fontSize: '16px', lineHeight: 1.6 }}>
@@ -189,7 +189,7 @@ export default function ProjectsPage({ onNavigateHome, onShowToast }) {
 
       <div className="container" style={{ marginTop: '36px' }}>
         {/* 2. Filter Tabs */}
-        <div style={{ 
+        <div className="projects-toolbar" style={{ 
           display: 'flex', 
           justifyContent: 'space-between', 
           alignItems: 'center', 
@@ -201,7 +201,7 @@ export default function ProjectsPage({ onNavigateHome, onShowToast }) {
           borderRadius: 'var(--radius-lg)',
           border: '1px solid var(--border-light)'
         }}>
-          <div style={{ display: 'flex', gap: '8px' }}>
+          <div className="projects-tabs-wrap" style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
             {[
               { id: 'all', label: 'All Projects (4)' },
               { id: 'ready', label: 'Ready to Move' },
@@ -232,7 +232,7 @@ export default function ProjectsPage({ onNavigateHome, onShowToast }) {
         </div>
 
         {/* 3. Projects Grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '30px' }}>
+        <div className="projects-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '24px' }}>
           {filteredProjects.map((project) => (
             <div
               key={project.id}
@@ -346,7 +346,7 @@ export default function ProjectsPage({ onNavigateHome, onShowToast }) {
                 </div>
 
                 {/* Action Buttons */}
-                <div style={{ display: 'flex', gap: '10px' }}>
+                <div className="project-card-actions" style={{ display: 'flex', gap: '10px' }}>
                   <button
                     onClick={() => handleOpenInquiry(project)}
                     className="btn-primary"
@@ -380,7 +380,7 @@ export default function ProjectsPage({ onNavigateHome, onShowToast }) {
       {isModalOpen && selectedProject && (
         <div className="modal-backdrop" onClick={() => setIsModalOpen(false)}>
           <div 
-            className="modal-container" 
+            className="modal-content modal-container" 
             style={{ maxWidth: '540px' }} 
             onClick={(e) => e.stopPropagation()}
           >
@@ -398,7 +398,7 @@ export default function ProjectsPage({ onNavigateHome, onShowToast }) {
               </button>
             </div>
 
-            <div style={{ padding: '24px 28px' }}>
+            <div className="modal-body-padded" style={{ padding: '24px 28px' }}>
               {submitted ? (
                 <div style={{ textAlign: 'center', padding: '20px 0' }}>
                   <div style={{ width: '60px', height: '60px', borderRadius: '50%', background: '#ecfdf5', color: '#10b981', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px' }}>
@@ -439,7 +439,7 @@ export default function ProjectsPage({ onNavigateHome, onShowToast }) {
                     />
                   </div>
 
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px' }}>
+                  <div className="modal-form-grid-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px' }}>
                     <div className="form-group">
                       <label className="form-label">Email Address *</label>
                       <input 

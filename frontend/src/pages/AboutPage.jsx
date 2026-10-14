@@ -83,7 +83,7 @@ export default function AboutPage({ onNavigate }) {
               <span className="badge-tag" style={{ background: 'rgba(245, 158, 11, 0.15)', color: 'var(--yellow-400)', border: '1px solid rgba(245, 158, 11, 0.3)', padding: '5px 14px', borderRadius: 'var(--radius-full)', fontSize: '13px', fontWeight: 700, display: 'inline-block', marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.8px' }}>
                 India's Trusted Real Estate Platform
               </span>
-              <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '42px', fontWeight: 800, color: '#ffffff', lineHeight: 1.2, marginBottom: '14px' }}>
+              <h1 className="page-hero-title" style={{ fontFamily: 'var(--font-display)', fontSize: '42px', fontWeight: 800, color: '#ffffff', lineHeight: 1.2, marginBottom: '14px' }}>
                 About ESTATEPRO
               </h1>
               <p style={{ color: '#cbd5e1', fontSize: '18px', lineHeight: 1.6, maxWidth: '580px', marginBottom: '28px' }}>

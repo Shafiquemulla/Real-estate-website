@@ -136,7 +136,7 @@ export default function RentPage({
               <Sparkles size={13} />
               Mumbai Verified Rentals
             </span>
-            <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '38px', fontWeight: 800, color: '#ffffff', lineHeight: 1.2, marginBottom: '12px' }}>
+            <h1 className="page-hero-title" style={{ fontFamily: 'var(--font-display)', fontSize: '38px', fontWeight: 800, color: '#ffffff', lineHeight: 1.2, marginBottom: '12px' }}>
               Properties For Rent in Mumbai
             </h1>
             <p style={{ color: '#cbd5e1', fontSize: '16px', lineHeight: 1.6 }}>
@@ -149,6 +149,7 @@ export default function RentPage({
       <div className="container" style={{ marginTop: '36px' }}>
         {/* 2. Interactive Filter Control Center */}
         <div 
+          className="rent-filter-box"
           style={{
             background: '#ffffff',
             borderRadius: 'var(--radius-xl)',
@@ -169,7 +170,7 @@ export default function RentPage({
               borderRadius: 'var(--radius-md)', 
               padding: '10px 16px', 
               flex: 1, 
-              minWidth: '260px' 
+              minWidth: 'min(100%, 220px)' 
             }}>
               <Search size={18} color="var(--text-muted)" />
               <input 
@@ -207,7 +208,7 @@ export default function RentPage({
           </div>
 
           {/* Row 2: Property Type & Monthly Budget Presets */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px', paddingTop: '16px', borderTop: '1px solid var(--border-subtle)' }}>
+          <div className="rent-filter-presets-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', gap: '20px', paddingTop: '16px', borderTop: '1px solid var(--border-subtle)' }}>
             {/* Property Types */}
             <div>
               <span style={{ display: 'block', fontSize: '12px', fontWeight: 700, color: 'var(--navy-900)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px' }}>
@@ -383,7 +384,7 @@ export default function RentPage({
             </h3>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '24px' }}>
+          <div className="rent-trust-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', gap: '24px' }}>
             <div style={{ display: 'flex', gap: '14px', alignItems: 'flex-start' }}>
               <div style={{ width: '42px', height: '42px', borderRadius: '10px', background: 'rgba(245, 158, 11, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                 <ShieldCheck size={22} color="var(--yellow-600)" />

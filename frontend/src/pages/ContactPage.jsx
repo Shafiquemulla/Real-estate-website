@@ -51,7 +51,7 @@ export default function ContactPage({ onShowToast }) {
           <span style={{ color: 'var(--yellow-600)', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1px' }}>
             Get in Touch
           </span>
-          <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '38px', fontWeight: 800, color: 'var(--navy-900)', marginTop: '4px', marginBottom: '10px' }}>
+          <h1 className="page-hero-title" style={{ fontFamily: 'var(--font-display)', fontSize: '38px', fontWeight: 800, color: 'var(--navy-900)', marginTop: '4px', marginBottom: '10px' }}>
             Contact ESTATEPRO India Advisory
           </h1>
           <p style={{ color: 'var(--text-secondary)', fontSize: '16px' }}>
@@ -59,9 +59,9 @@ export default function ContactPage({ onShowToast }) {
           </p>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '40px' }}>
+        <div className="contact-layout-grid" style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '30px' }}>
           {/* Contact Form */}
-          <div style={{
+          <div className="contact-form-card" style={{
             background: '#ffffff',
             borderRadius: 'var(--radius-xl)',
             padding: '36px',

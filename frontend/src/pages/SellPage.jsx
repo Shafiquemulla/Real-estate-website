@@ -34,7 +34,7 @@ export default function SellPage({ onOpenPostProperty, onNavigate }) {
           <span style={{ color: 'var(--yellow-600)', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1px' }}>
             Sell Faster with Premium Mumbai Exposure
           </span>
-          <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '38px', fontWeight: 800, color: 'var(--navy-900)', marginTop: '6px', marginBottom: '14px' }}>
+          <h1 className="page-hero-title" style={{ fontFamily: 'var(--font-display)', fontSize: '38px', fontWeight: 800, color: 'var(--navy-900)', marginTop: '6px', marginBottom: '14px' }}>
             List & Sell Your Mumbai Property for Maximum Value
           </h1>
           <p style={{ color: 'var(--text-secondary)', fontSize: '16px', lineHeight: '1.6' }}>
@@ -77,7 +77,7 @@ export default function SellPage({ onOpenPostProperty, onNavigate }) {
             </h2>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px', alignItems: 'center' }}>
+          <div className="sell-calc-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 200px), 1fr))', gap: '20px', alignItems: 'center' }}>
             <div className="form-group">
               <label className="form-label">Mumbai Locality</label>
               <select
@@ -137,7 +137,7 @@ export default function SellPage({ onOpenPostProperty, onNavigate }) {
         </div>
 
         {/* 3 Step Process */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '28px' }}>
+        <div className="sell-steps-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))', gap: '24px' }}>
           <div style={{ background: '#ffffff', padding: '28px', borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-light)' }}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '12px' }}>
               <span style={{ fontSize: '28px', fontWeight: 800, color: 'var(--yellow-500)' }}>01</span>
